@@ -1,1 +1,1 @@
-$title @p actionbar "$(enchantment) $(enchant_level)"
+$title @p actionbar [{"fallback":"$(enchantment)","translate":"enchantment.minecraft.$(enchantment)"}," $(enchant_level)"]

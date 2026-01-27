@@ -7,7 +7,9 @@ scoreboard objectives add dlet_timer dummy
 scoreboard objectives add dlet_show_timer dummy
 scoreboard objectives add toggle_display_of_only_max_enchants trigger
 
-# updated for 1.21 - update for other updates:
+# updated for 1.21.11 - update for other updates:
+data modify storage dlet:max_enchants list."minecraft:lunge" set value 3
+
 data modify storage dlet:max_enchants list."minecraft:aqua_affinity" set value 1
 data modify storage dlet:max_enchants list."minecraft:bane_of_arthropods" set value 5
 data modify storage dlet:max_enchants list."minecraft:binding_curse" set value 1
