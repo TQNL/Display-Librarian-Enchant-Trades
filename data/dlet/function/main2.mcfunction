@@ -1,5 +1,3 @@
-# executing as villager the player is looking at, at the player, which is useful for referencing this player with @p
-
 # initialising scoreboard
 execute store result score @s dlet_trade_counter if data entity @s Offers.Recipes[]
 scoreboard players add @s dlet_timer 0

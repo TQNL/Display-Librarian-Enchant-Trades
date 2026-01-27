@@ -1,6 +1,11 @@
 tellraw @a {"text": "Loaded Display Librarian Enchant Trades","color": "#00FF00"}
+scoreboard players set #dlet_villager_wake_time dlet_timer 24010
+function dlet:schedule_update/calc
+function dlet:main
 scoreboard objectives add dlet_trade_counter dummy
+scoreboard objectives add dlet_show_trade_counter dummy
 scoreboard objectives add dlet_timer dummy
+scoreboard objectives add dlet_show_timer dummy
 scoreboard objectives add toggle_display_of_only_max_enchants trigger
 
 # updated for 1.21 - update for other updates:
