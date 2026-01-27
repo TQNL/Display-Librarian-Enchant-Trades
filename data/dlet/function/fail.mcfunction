@@ -1,4 +1,3 @@
-scoreboard players add @s dlet_timer 1
 execute store result entity @s data.dlet.dlet_timer int 1 run scoreboard players get @s dlet_timer
 execute if score @s dlet_timer >= @s dlet_trade_counter run return run scoreboard players set @s dlet_timer 0
 
