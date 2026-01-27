@@ -1,4 +1,3 @@
-say i
 # 1.21.5: Most components that used to have two fields now always use their simplified form, with the other one field inlined to top-level
 # the data field was added to all entities too, exposed through the custom_data component, meaning we can use that to replace previous non-simplified form
 $execute if data entity @s Offers.Recipes[$(dlet_timer)].sell.components."minecraft:stored_enchantments" run scoreboard players add @s dlet_timer 1
