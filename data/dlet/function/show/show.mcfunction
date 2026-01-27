@@ -7,4 +7,4 @@ scoreboard players add @s dlet_show_timer 0
 execute store result storage dlet:looked_at_villager dlet_show_timer int 1 run scoreboard players get @s dlet_show_timer
 
 # initialising algorithm
-function dlet:show2 with storage dlet:looked_at_villager
+function dlet:show/show2 with storage dlet:looked_at_villager

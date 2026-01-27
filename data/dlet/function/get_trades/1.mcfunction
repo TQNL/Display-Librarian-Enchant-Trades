@@ -3,11 +3,11 @@
 scoreboard players add @s dlet_timer 1
 data modify entity @s data.dlet_enchant_data append value {}
 $execute if data entity @s Offers.Recipes[$(dlet_timer)].sell.components."minecraft:stored_enchantments" run data modify entity @s data.dlet.selected_enchant set from entity @s Offers.Recipes[$(dlet_timer)].sell.components."minecraft:stored_enchantments"
-$execute if data entity @s Offers.Recipes[$(dlet_timer)].sell.components."minecraft:stored_enchantments" run function dlet:get_trade0/2 with entity @s data.dlet
+$execute if data entity @s Offers.Recipes[$(dlet_timer)].sell.components."minecraft:stored_enchantments" run function dlet:get_trades/2 with entity @s data.dlet
 
 execute if score @s dlet_timer >= @s dlet_trade_counter run return run scoreboard players set @s dlet_timer 0
 execute store result entity @s data.dlet.dlet_timer int 1 run scoreboard players get @s dlet_timer
 
 execute if score @s dlet_timer matches 15.. run return 0
 
-function dlet:main3 with entity @s data.dlet
+function dlet:get_trades/1 with entity @s data.dlet

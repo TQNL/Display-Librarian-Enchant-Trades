@@ -14,4 +14,4 @@ scoreboard players set $filter find_look.temp 0
 tag @e remove find_looking.in_filter
 function find_looking:internal/filter/iteration
 
-execute as @e[tag=find_looking.result] run function dlet:test_data
+execute as @e[tag=find_looking.result] run function dlet:show/test_data
