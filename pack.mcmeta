@@ -1,6 +1,12 @@
 {
-    "pack":{
-        "pack_format": 48,
-        "description": "Display the enchanted book trades of librarians above their heads. By ThijquintNL."
+    "pack": {
+        "pack_format": 71,
+        "description": "Display the enchanted book trades of librarians above their heads. By ThijquintNL.",
+        "min_format": 71,
+        "max_format": 9999,
+        "supported_formats": {
+            "min_inclusive": 71,
+            "max_inclusive": 9999
+        }
     }
 }
